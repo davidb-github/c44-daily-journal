@@ -1,2 +1,2 @@
-# c44-practice-functions-
-template repo for nss practice
+# c44-practice- -
+template repo for nss practice exercises.
