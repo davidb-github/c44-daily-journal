@@ -1,16 +1,61 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Nashville Software School</title>
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
 
-    <body>
-        <main id="container">
+<head>
+    <meta charset="utf-8">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
 
-        </main>
+<body>
+    <header>
+        <img src="./images/nss-logo-textless.jpeg" alt="NSS logo">
+    </header>
 
-        <script type="module" src="./scripts/main.js"></script>
-    </body>
+    <main id="container">
+
+        <section>
+            <article>
+                <h2>Daily Journal</h2>
+                <form action="">
+                    <fieldset class="journal">
+                        <label for="journalDate">Date of Entry</label>
+                        <input type="date" name="journalDate" id="journalDate">
+                    </fieldset>
+
+                    <fieldset class="journal">
+                        <label for="conceptsCovered">Concepts Covered</label>
+                        <input type="text" name="conceptsCovered" id="conceptsCovered">
+                    </fieldset>
+
+                    <fieldset class="journal">
+                        <label for="journalEntry">Journal Entry</label>
+                        <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
+                    </fieldset>
+
+                    <fieldset class="journal">
+                        <label for="mood">Mood for the Day</label>
+                        <select name="mood" id="mood">
+                            <option value="">--Choose Option--</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="tired">Tired</option>
+                            <option value="frustrated">Frustrated</option>
+                            <option value="hopeful">Hopeful</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Record Journal Entry">
+
+
+
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>&#169; NSS 2020</footer>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
 </html>
