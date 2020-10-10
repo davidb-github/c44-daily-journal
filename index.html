@@ -11,18 +11,42 @@
     <header>
         <img src="./images/nss-logo-textless.jpeg" alt="NSS logo">
     </header>
-     
+
     <main id="container">
 
         <section>
             <article>
                 <h2>Daily Journal</h2>
                 <form action="">
-                    <fieldset>
+                    <fieldset class="journal">
                         <label for="journalDate">Date of Entry</label>
                         <input type="date" name="journalDate" id="journalDate">
                     </fieldset>
-                    
+
+                    <fieldset class="journal">
+                        <label for="conceptsCovered">Concepts Covered</label>
+                        <input type="text" name="conceptsCovered" id="conceptsCovered">
+                    </fieldset>
+
+                    <fieldset class="journal">
+                        <label for="journalEntry">Journal Entry</label>
+                        <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
+                    </fieldset>
+
+                    <fieldset class="journal">
+                        <label for="mood">Mood for the Day</label>
+                        <select name="mood" id="mood">
+                            <option value="">--Choose Option--</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="tired">Tired</option>
+                            <option value="frustrated">Frustrated</option>
+                            <option value="hopeful">Hopeful</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Record Journal Entry">
+
+
 
                 </form>
             </article>
