@@ -15,13 +15,12 @@ export const EntryListComponent = () => {
     const entries = useJournalEntries()
 
     let entryHTML = "" 
+    // Loop entries, take object and turn it into HTML
     for (const entry of entries) {
         
-        JournalEntryComponent(entry);
-        /*
-            Invoke the component that returns an
-            HTML representation of a single entry
-        */
+        // build html for a single entry object
+        entryHTML = JournalEntryComponent(entry);
+        // append newly built html to entryLog var
         entryLog.innerHTML += entryHTML
     }
 }
