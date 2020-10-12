@@ -11,18 +11,16 @@ import { JournalEntryComponent } from "./JournalEntry.js"
 const entryLog = document.querySelector(".entryLog")
 
 export const EntryListComponent = () => {
-    debugger
     // Use the journal entry data from the data provider component
     const entries = useJournalEntries()
 
     let entryHTML = "" 
+    // Loop entries, take object and turn it into HTML
     for (const entry of entries) {
         
+        // build html for a single entry object
         entryHTML = JournalEntryComponent(entry);
-        /*
-            Invoke the component that returns an
-            HTML representation of a single entry
-        */
+        // append newly built html to entryLog var
         entryLog.innerHTML += entryHTML
     }
 }
