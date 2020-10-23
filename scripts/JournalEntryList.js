@@ -16,6 +16,12 @@ export const EntryListComponent = () => {
       // init and populate array
       const entries = useJournalEntries()
   
+    // invoke render and pass entries array as argument
+    render(entries)
+    })
+}
+// render entries to the DOM
+const render = (entries) => {
     let entryHTML = "" 
     // Loop entries, take object and turn it into HTML
     for (const entry of entries) {
@@ -25,6 +31,4 @@ export const EntryListComponent = () => {
         // append newly built html to entryLog var
         entryLog.innerHTML += entryHTML
     }
-    })
 }
-// move render into own function 
