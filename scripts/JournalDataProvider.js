@@ -7,12 +7,17 @@
  */
 
 // init empty array to hold fetch-ed data
-const journal = []
+let journal = []
 
 // fetch data from local json-server
 export const getEntries = () => {
+    // fetch entries from json-server API
     return fetch("http://localhost:8088/entries")
+
+        // parse the body text as JSON
         .then(response => response.json())
+
+        // popupate journal array 
         .then(parsedEntries => {
             journal = parsedEntries
         })
