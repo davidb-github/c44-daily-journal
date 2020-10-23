@@ -1,0 +1,26 @@
+{
+    "entries": [
+        
+        {
+            "id"      : 1,
+            "date"    : "10/09/2020",
+            "concept" : "HTML & CSS",
+            "entry"   : "Lecture covered HTML components and how to make grid layouts with Flexbox in CSS.",
+            "mood"    : "Calm"
+        },
+        {
+            "id"      : 2,
+            "date"    : "10/10/2020",
+            "concept" : "Export functions",
+            "entry"   : "Lecture covered export functions and practiced with the modern-farm code base",
+            "mood"    : "Calm"
+        },
+        {
+            "id"      : 3,
+            "date"    : "10/11/2020",
+            "concept" : "Array methods",
+            "entry"   : "Lecture covered array methods and practiced with modern farm code base",
+            "mood"    : "Calm"
+        }
+    ]
+}
