@@ -21,6 +21,13 @@
             "concept" : "Array methods",
             "entry"   : "Lecture covered array methods and practiced with modern farm code base",
             "mood"    : "Calm"
+        },
+        {
+            "id"      : 4,
+            "date"    : "10/11/2020",
+            "concept" : "Array methods",
+            "entry"   : "Lecture covered array methods and practiced with modern farm code base",
+            "mood"    : "Calm"
         }
     ]
 }
