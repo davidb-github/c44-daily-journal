@@ -6,30 +6,22 @@
  *      the entries for different purposes.
  */
 
-// This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "10/09/2020",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Calm"
-    },
-    {
-        id: 2,
-        date: "10/10/2020",
-        concept: "Export functions",
-        entry: "We talked export functions and practiced with the modern-farm code base",
-        mood: "Calm"
-    },
-    {
-        id: 3,
-        date: "10/11/2020",
-        concept: "Array methods",
-        entry: "We talked array methods and practiced with modern farm code base",
-        mood: "Calm"
-    }
-]
+// init empty array to hold fetch-ed data
+let journal = []
+
+// fetch data from local json-server
+export const getEntries = () => {
+    // fetch entries from json-server API
+    return fetch("http://localhost:8088/entries")
+
+        // parse the body text as JSON
+        .then(response => response.json())
+
+        // popupate journal array 
+        .then(parsedEntries => {
+            journal = parsedEntries
+        })
+}
 
 /*
     You export a function that provides a version of the
